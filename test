@@ -1,0 +1,72 @@
+
+class Vehicle:
+	def __init__(self, make, model, color, fueltype, options):
+		self.make=make
+		self.model=model
+		self.color=color
+		self.fueltype=fueltype
+		self.options=options
+	
+	def getmake(self):
+		return '{} {}'.make
+	def getmodel(self):
+		return '{} {}'.model
+	def getcolor(self):
+		return '{} {}'.color
+	def getfueltype(self):
+		return '{} {}'.fueltype
+	def getoptions(self):
+		return '{} {}'.options			
+
+class Car:
+	def __init__(self, enginesize, numdoors):
+		self.enginesize=enginesize
+		self.numdoors=numdoors
+	
+	def getenginesize(self):
+		return '{} {}'.enginesize
+	def getnumdoors(self):
+		return '{} {}'.numdoors			
+
+class Truck:
+	def __init__(self, cabstyle, bedlength):
+		self.cabstyle=cabstyle
+		self.bedlength=bedlength
+
+	def getcabstyle(self):
+		return '{} {}'.cabstyle
+	def getbedlength(self):
+		return'{} {}'.bedlength		
+								
+	def printdetails(self):
+		print("car make : ",self.make)
+		print("car model :",self.model)
+		print("car color :",self.model)
+		print("fuel type :",self.fueltype)
+		print("options :",self.options)
+
+	garage=()
+	while True:
+		option=int(input("Enter \n1 for car, \n2 for truck, \n3 for exit)"))
+	if(option==1):
+		make=input("Enter Car Make : ")
+		model=input("Enter Car Model : ")
+		color=input("Enter Car Color : ")
+		fueltype=input("Enter Car Fueltype : ")
+		options=input("Enter Car Options : ")
+		enginesize=input("Enter Car Enginesize : ")
+		numdoors=input("Enter Car Number of doors : ")
+	elif(option==2):
+		make=input("Enter Car Make : ")
+		model=input("Enter Car Model : ")
+		color=input("Enter Car Color : ")
+		fueltype=input("Enter Car Fueltype : ")
+		options=input("Enter Car Options : ")
+		cabstyle=input("Enter Cab Style : ")
+		bedlength=input("Enter bedlength : ")
+	else:
+		stop
+
+
+		
+print("Vehicles Details is :")
