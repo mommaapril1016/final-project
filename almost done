@@ -1,0 +1,18 @@
+def main():
+	directory = input("enter directory that you want to save file:")
+	filename =input("enter file name:")
+	name = input("enter your name:")
+	address = input("enter your address:")
+	phonenumber = input("enter your phonenumber:")
+	if os.path.isdir(directory):
+		writefile = open(os.path.join(directory,filename),'w')
+		writefile.write(name+",+address+"+phonenumber+'\n')
+		writefile.close()
+		print("file contents:")
+		readfile = open(os.path.join(directory,filename),'r')
+		for line in readfile:
+			print(line)
+			readfile.close()
+	else:
+		print("sorry directory does not exist")
+main()
