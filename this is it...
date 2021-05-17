@@ -1,0 +1,20 @@
+# final-project
+#my key 45e3c254f016b9355138d5479c65e02a
+
+def by_city():
+	city = input('enter city name: ')
+	request_url = "http://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}"
+	print(request_url)
+def by_zip():
+	zip = int(input('enter zip: '))
+	request_url = "http://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}"
+	print(request_url)
+def display(resp):
+	if resp_status_code==200:
+		print(weatherforecast)
+		type: ("weather discription")
+		Hightemp: ("high temp in fahrenheit")
+		Lowtemp: ("low temp in fahrenheight")
+		Windspeed: ("wind speed in miles/hr")
+	else:	
+		print("request failed")
